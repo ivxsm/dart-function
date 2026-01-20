@@ -2,6 +2,8 @@
 
 void main() {
   Person someone = Person(name: "Khaled");
+  Person anotherone = Person(name: "none");
+  anotherone.printname();
   someone.printname();
 }
 
