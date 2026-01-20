@@ -1,11 +1,16 @@
 
 
 void main() {
-  print("hello world");
+  Person someone = Person(name: "Khaled");
+  someone.printname();
 }
 
 class Person {
-  String? name ;
+  String name ;
   int? age ;
-  Person({name , age });
+  Person({ required this.name  , this.age });
+
+  void printname (){
+    print("This $name");
+  }
 }
